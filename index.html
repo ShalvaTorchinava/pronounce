@@ -13,22 +13,24 @@
     <header>
         <nav class="header-nav">
             <div class="logo">
-                    <img src="./images/header/logo.svg" alt="logo">
-                    <h1>Pronounce</h1>
+                    <a href="#"><img src="./images/header/logo.svg" alt="logo"></a>
+                    <a href="#"><h1>Pronounce</h1></a>
             </div>
             <div class="menu">
-                <div class="menu__item">
-                    <img class="menu__decoration" src="./images/header/home.svg" alt="image">
-                    <p class="menu__decoration">Conversations</p>
-                </div>
-                <div class="menu__item">
-                    <img class="menu__decoration decoration-no-active" src="./images/header/settings-alt.svg" alt="image">
-                    <p class="menu__decoration decoration-no-active"> Settings</p>
-                </div>
-                <div class="menu__item">
-                    <img class="menu__decoration decoration-no-active" src="./images/header/modeComment.svg" alt="image">
-                    <p class="menu__decoration decoration-no-active">Leave Feedback</p>
-                </div>
+                <ul>
+                    <li class="menu__item">
+                        <a href="#"><img class="menu__decoration" src="./images/header/home.svg" alt="image"></a>
+                        <a href="#"><p class="menu__decoration">Conversations</p></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#"><img class="menu__decoration decoration-no-active" src="./images/header/settings-alt.svg" alt="image"></a>
+                        <a href="#"><p class="menu__decoration decoration-no-active"> Settings</p></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#"><img class="menu__decoration decoration-no-active" src="./images/header/modeComment.svg" alt="image"></a>
+                        <a href="#"><p class="menu__decoration decoration-no-active">Leave Feedback</p></a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <div class="header-auth">
@@ -40,159 +42,160 @@
                     <p>Olga A.</p>
                 </div>
             </div>
-            <div class="menu__decoration">
-                <img src="/images/header/Logout.svg" alt="image">
-            </div>   
+            <button class="header-auth__logout"><img src="/images/header/Logout.svg" alt="image"></button> 
         </div>
-        <div class="burger">
+        <button class="burger">
             <img src="./images/header/burger.svg" alt="">
-        </div>
+        </button>
     </header>
     <main>
-        <div class="main-nav">
-            <div class="main-nav__control">
-                <img src="./images/main/ArrowBack.svg" alt="image">
-                <h2>First phrase here</h2>
-                <p class="medium-text">5 min ago</p>
+        <div class="main-box">
+            <div class="main-nav">
+                <button class="main-nav__control">
+                    <img src="./images/main/ArrowBack.svg" alt="image">
+                    <h2>First phrase here</h2>
+                    <p class="text-style-5">5 min ago</p>
+                </button>
+                <button class="main-nav__delete">
+                    <img src="./images/main/delete_1.svg" alt="image">
+                </button>
             </div>
-            <div class="main-nav__delete">
-                <img src="./images/main/delete_1.svg" alt="image">
-            </div>
-        </div>
-        <div class="workplace">
-            <div class="workplace-lft">
-                <div class="card">
-                    <div class="card__item">
-                        <span class="card__item_background background-red">toaster</span>
-                        <img src="./images/main/Ellipse.svg" alt="image">
-                        <p class="small-text">Correctness</p>
-                    </div>
-                    <div class="card__item">
-                        <p class="medium-text">You said</p>
-                        <span class="card__item_text-color text-color-red">owstr</span>
-                        <img class="card__item_icon-background background-grey" src="./images/main/Volume_Half.svg" alt="image">
-                    </div>
-                    <div class="card__item">
-                        <p class="big-text">Now say</p>
-                        <span class="card__item_background background-green">towstr <img src="/images/main/Volume_Half_white.svg" alt="image"></span>
-                    </div>
-                    <div class="card__item">
-                        <p class="medium-text">You may have missed the <span class="card__item_text-style">t</span> in toaster</p>
-                    </div>
-                    <div class="card__item">
-                        <p class="medium-text">Try to bring the tip of your tongue behind your teeth to block the air, then release it all at once.</p>
-                    </div>
-                    <div class="line__item">
-                    </div>
-                    <div class="card__nav">
-                        <div class="card-button">
-                            <span class="card-button__item">Got it!</span>
-                            <img src="./images/main/Flag.svg" alt="img">
-                            <p class="button-text">Report issue</p>
+            <div class="workplace">
+                <div class="workplace-lft">
+                    <button class="card-analysis">
+                        <p class="text-style-5">Show speech analysis</p>
+                        <img src="/images/main/Arrow.svg" alt="">
+                    </button>
+                    <div class="card">
+                        <div class="card__item">
+                            <span class="card__item_background background-red">toaster</span>
+                            <img src="./images/main/Ellipse.svg" alt="image">
+                            <p class="text-style-1">Correctness</p>
                         </div>
-                        <div class="card-button">
-                            <p class="button-text">Show Context</p>
-                            <img src="./images/main/Arrow.svg" alt="">
+                        <div class="card__item">
+                            <p class="text-style-4">You said</p>
+                            <button class="card__item_background background-red box-shadow">owstr<img src="/images/main/Volume_Half.svg" alt="image"></button>
+                        </div>
+                        <div class="card__item">
+                            <p class="text-style-4">Now say</p>
+                            <button class="card__item_background background-green box-shadow">towstr<img src="/images/main/Volume_Half_white.svg" alt="image"></button>
+                        </div>
+                        <div class="card__item">
+                            <p class="text-style-2">You may have missed the <span class="card__item_text-style">t</span> in toaster</p>
+                        </div>
+                        <div class="card__item">
+                            <p class="text-style-2">Try to bring the tip of your tongue behind your teeth to block the air, then release it all at once.</p>
+                        </div>
+                        <div class="card__border">
+                        </div>
+                        <div class="card__nav">
+                            <div class="card-button">
+                                <button class="card-button__button">Got it!</button>
+                                <button class="card-button__item"><img src="/images/main/Flag.svg" alt=""></button>
+                            </div>
+                            <div class="card-button">
+                                <button class="card-button__item"><img src="/images/main/Arrow.svg" alt=""></button>
+                            </div>
                         </div>
                     </div>
+                    <button class="card">
+                        <div class="card__item">
+                            <span class="card__item_background background-blue">true</span>
+                            <img src="./images/main/Ellipse.svg" alt="image">
+                            <p class="text-style-1">Engagement</p>
+                        </div>
+                    </button>
+                    <button class="card">
+                        <div class="card__item">
+                            <span class="card__item_background background-yellow">really</span>
+                            <img src="./images/main/Ellipse.svg" alt="image">
+                            <p class="text-style-1">Clarity</p>
+                        </div>
+                    </button>
+                    <button class="card">
+                        <div class="card__item">
+                            <span class="card__item_background background-red">toaster</span>
+                            <img src="./images/main/Ellipse.svg" alt="image">
+                            <p class="text-style-1">Correctness</p>
+                        </div>
+                    </button>
+                    <div class="line">
+                        <div class="line__item">
+                        </div>
+                        <div class="line__text">
+                            <p>Cues Viewed</p>
+                        </div>
+                        <div class="line__item">
+                        </div>
+                    </div>
+                    <button class="card card-viewed">
+                        <div class="card__item">
+                            <span class="card__item_background background-yellow">really</span>
+                            <img src="./images/main/Ellipse.svg" alt="image">
+                            <p class="text-style-1">Clarity</p>
+                        </div>
+                        <div class="card-viewed__done">
+                            <img src="./images/main/Done.svg" alt="image">
+                        </div>
+                    </button>
                 </div>
-                <div class="card">
-                    <div class="card__item">
-                        <span class="card__item_background background-blue">true</span>
-                        <img src="./images/main/Ellipse.svg" alt="image">
-                        <p class="small-text">Engagement</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__item">
-                        <span class="card__item_background background-yellow">really</span>
-                        <img src="./images/main/Ellipse.svg" alt="image">
-                        <p class="small-text">Clarity</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__item">
-                        <span class="card__item_background background-red">toaster</span>
-                        <img src="./images/main/Ellipse.svg" alt="image">
-                        <p class="small-text">Correctness</p>
-                    </div>
-                </div>
-                <div class="line">
-                    <div class="line__item">
-                    </div>
-                    <div class="line__text">
-                        <p>Cues Viewed</p>
-                    </div>
-                    <div class="line__item">
-                    </div>
-                </div>
-                <div class="card card-viewed">
-                    <div class="card__item">
-                        <span class="card__item_background background-yellow">really</span>
-                        <img src="./images/main/Ellipse.svg" alt="image">
-                        <p class="small-text">Clarity</p>
-                    </div>
-                    <div class="card-viewed__done">
-                        <img src="./images/main/Done.svg" alt="image">
-                    </div>
-                </div>
-            </div>
-            <div class="workplace-rgt">
-                <div class="card">
-                    <div class="block-name">
-                        <img src="./images/main/Correctness.svg" alt="image">
-                        <p class="button-text">Correctness</p>
-                    </div>
-                    <div class="block">
-                        <div class="block__title">
-                            <p class="medium-text medium-text-weight">Nice pronunciation</p>
-                            <img src="./images/main/Group_bot.svg" alt="image">
+                <div class="workplace-rgt">
+                    <div class="card">
+                        <div class="block-name">
+                            <img src="./images/main/Correctness.svg" alt="image">
+                            <p class="text-style-5">Correctness</p>
                         </div>
-                        <div class="block__description">
-                            <p class="small-text">Just a few words mispronounced</p>
+                        <div class="block">
+                            <div class="block__title">
+                                <p class="text-style-3">Nice pronunciation</p>
+                                <img src="./images/main/Group_top.svg" alt="image">
+                            </div>
+                            <div class="block__description">
+                                <p class="text-style-1">Just a few words mispronounced</p>
+                            </div>
                         </div>
+                        <button class="block">
+                            <div class="block__title">
+                                <p class="text-style-3">You have no grammar issues</p>
+                                <img src="./images/main/Group_bot.svg" alt="image">
+                            </div>
+                        </button>
                     </div>
-                    <div class="block">
-                        <div class="block__title">
-                            <p class="medium-text medium-text-weight">You have no grammar issues</p>
-                            <img src="./images/main/Group_bot.svg" alt="image">
+                    <div class="card">
+                        <div class="block-name">
+                            <img src="./images/main/Engagement.svg" alt="image">
+                            <p class="text-style-5">Engagement</p>
                         </div>
+                        <button class="block">
+                            <div class="block__title">
+                                <p class="text-style-3">Could be a little slow</p>
+                                <img src="./images/main/Group_bot.svg" alt="image">
+                            </div>
+                        </button>
+                        <button class="block">
+                            <div class="block__title">
+                                <p class="text-style-3">You speak with an optimal vocal variation</p>
+                                <img src="./images/main/Group_bot.svg" alt="image">
+                            </div>
+                        </button>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="block-name">
-                        <img src="./images/main/Engagement.svg" alt="image">
-                        <p class="button-text">Engagement</p>
-                    </div>
-                    <div class="block">
-                        <div class="block__title">
-                            <p class="medium-text medium-text-weight">Could be a little slow</p>
-                            <img src="./images/main/Group_bot.svg" alt="image">
+                    <div class="card">
+                        <div class="block-name">
+                            <img src="./images/main/Clarity.svg" alt="image">
+                            <p class="text-style-5">Clarity</p>
                         </div>
-                    </div>
-                    <div class="block">
-                        <div class="block__title">
-                            <p class="medium-text medium-text-weight">You speak with an optimal vocal variation</p>
-                            <img src="./images/main/Group_bot.svg" alt="image">
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="block-name">
-                        <img src="./images/main/Clarity.svg" alt="image">
-                        <p class="button-text">Clarity</p>
-                    </div>
-                    <div class="block">
-                        <div class="block__title">
-                            <p class="medium-text medium-text-weight">You make the right pausing</p>
-                            <img src="./images/main/Group_bot.svg" alt="image">
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="block__title">
-                            <p class="medium-text medium-text-weight">You used just a few fillers</p>
-                            <img src="./images/main/Group_bot.svg" alt="image">
-                        </div>
+                        <button class="block">
+                            <div class="block__title">
+                                <p class="text-style-3">You make the right pausing</p>
+                                <img src="./images/main/Group_bot.svg" alt="image">
+                            </div>
+                        </button>
+                        <button class="block">
+                            <div class="block__title">
+                                <p class="text-style-3">You used just a few fillers</p>
+                                <img src="./images/main/Group_bot.svg" alt="image">
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
