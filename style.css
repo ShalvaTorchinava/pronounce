@@ -286,8 +286,9 @@ h2 {
 
 .text-style-3 {
     color: #3A3541;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
+    text-align: start;
 }
 
 .text-style-4 {
@@ -420,6 +421,7 @@ h2 {
         width: 100%;
         padding: 24px;
         background-color: white;
+        height: 80px;
     }
 
     .menu {
@@ -437,6 +439,14 @@ h2 {
 
     .logo, .burger {
         margin: 0px 10px
+    }
+
+    .header-nav {
+        align-items: center;
+    }
+
+    .workplace-lft {
+        padding-bottom: 10px;
     }
 }
 
